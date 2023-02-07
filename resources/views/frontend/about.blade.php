@@ -46,7 +46,21 @@
         .star{
           color:#FFBB1E;
         }
-        @media only screen and (max-width: 600px) and (min-width: 350px) {
+        .fa-hand-o-right{
+          color:green;
+        }
+        .fa-phone-square{
+          color:white;
+          font-size:25px;
+        }
+        .garments{
+          align:center;
+        }
+        .num {
+          padding-left: 30px !important;
+          border-radius: 26px !important;
+        }
+      @media only screen and (max-width: 600px) and (min-width: 350px) {
           .about{
             height:130px;
             background-color:#F8F6F3;
@@ -80,7 +94,15 @@
           display:block;
           text-align:justify;
         }
-        }  
+        .quality{
+          padding:20px;
+        }
+        .num {
+          padding-left: 30px !important;
+          border-radius: 26px !important;
+          width: 210px;
+        }
+      }  
     </style>
 
 <section>
@@ -174,93 +196,122 @@
 
         <div class="row">
 
-        <div class="col-md-6">
-                    <div class="big-img">
-                                <!-- <img class="big-imgs" src="{{asset('Image/dftu.jpeg')}}" alt="image"> -->
-                                <div id="carouselExampleCaptions" class="big-imgs carousel slide" data-bs-ride="carousel">
-                                  <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                  </div>
-                                  <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                      <img src="{{asset('Image/dghd.jpg')}}" class="d-block w-100 radius" alt="...">
-                                      <div class="carousel-caption d-none d-md-block">
-                                        </div>
+                        <div class="col-md-6">
+                            <div class="big-img">
+                                        <!-- <img class="big-imgs" src="{{asset('Image/dftu.jpeg')}}" alt="image"> -->
+                                        <div id="carouselExampleCaptions" class="big-imgs carousel slide" data-bs-ride="carousel">
+                                          <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                          </div>
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img src="{{asset('Image/dghd.jpg')}}" class="d-block w-100 radius" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                </div>
 
-                                        <div class="mt-4 text-center star">
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                        </div>
+                                                <div class="mt-4 text-center star">
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
 
-                                        <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                
+
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{asset('Image/dftu.jpeg')}}" class="d-block w-100 radius" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                </div>
+                                                <div class="mt-4 text-center star">
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{asset('Image/fdhf.png')}}" class="d-block w-100 radius" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                </div>
+                                                <div class="mt-4 text-center star">
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                              </div>
+                                          </div>
                                         
-
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img src="{{asset('Image/dftu.jpeg')}}" class="d-block w-100 radius" alt="...">
-                                      <div class="carousel-caption d-none d-md-block">
                                         </div>
-                                        <div class="mt-4 text-center star">
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                        </div>
-                                        <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img src="{{asset('Image/fdhf.png')}}" class="d-block w-100 radius" alt="...">
-                                      <div class="carousel-caption d-none d-md-block">
-                                        </div>
-                                        <div class="mt-4 text-center star">
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                          <i class="fa fa-star" aria-hidden="true"></i>
-                                        </div>
-                                        <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
-                                      </div>
                                   </div>
-                                
-                                </div>
-                          </div>
 
-        </div>
-
-
-          <div class="col-md-6">
-
-                    <div class="row text-center">
-                      <div class="col-md-3">
-                            <img src="{{asset('Image/Nankar-5-150x150.png')}}" alt="">
-                                </div>
-                                <div class="col-md-9">
-                                <div class="bg">
-                                <div class="content">
-                                  <h2>Certified Products</h2>
-                                  <p>Nankar Fashion is one of the leading, influential and most experienced Garments Buying Agent located in Mirpur DOHS, Dhaka, The Capital City of Bangladesh.</p>
-                                </div>
                         </div>
-                        
+
+
+                                <div class="col-md-6">
+
+                                  <div class="row text-center">
+                                    <div class="col-md-3">
+                                          <img src="{{asset('Image/Nankar-5-150x150.png')}}" alt="">
+                                              </div>
+                                              <div class="col-md-9">
+                                              <div class="bg">
+                                              <div class="content">
+                                                <h2>Certified Products</h2>
+                                                <p>Nankar Fashion is one of the leading, influential and most experienced Garments Buying Agent located in Mirpur DOHS, Dhaka, The Capital City of Bangladesh.</p>
+                                              </div>
+                                      </div>
+                                      
+                                              </div>
+                                            </div>
+                                            <div class="garments text-left">
+                                                <h1>We Deal With Various Quality Garments Products!</h1> 
+                                                <img src="{{asset('Image/logo-leaf-new.png')}}" alt="image">
+                                            </div>
+
+                                              <div class="quality row mt-3">
+                                                    <div class="col-6">
+                                                      <p>
+                                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; WORLDWIDE DELIVERY
+                                                      </p>
+                                                      <p>
+                                                      <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; FAST SHIPPING
+                                                      </p>
+                                                      <p>
+                                                      <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; QUALITY
+                                                      </p>
+                                                      <p>
+                                                      <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; SALES NOTIFICATIONS
+                                                      </p>
+                                                      <p>
+                                                      <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; AMAZING SUPPORT
+                                                      </p>
+                                                    <br>
+                                                      <div class="text-white num d-flex border border rounded py-2" style="background-color:#7BAF42;">
+                                                          <i class="fa fa-phone-square" aria-hidden="true" ></i>&emsp;
+                                                          +8801922221146
+                                                      </div>
+                                                    </div>
+                                                                                
+                                                    <div class="col-6">
+                                                      <p>
+                                                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; RELIABILITY
+                                                      </p> 
+                                                      <p>
+                                                      <i class="fa fa-hand-o-right" aria-hidden="true"></i>&ensp; 20 YEARS OF EXPERIENCE
+                                                      </p> 
+                                                    </div>
+                                              </div>
                                 </div>
-                              </div>
-                              <div class="text-left">
-                                  <h1>We Deal With Various Quality Garments Products!</h1> 
-                                  <img src="{{asset('Image/logo-leaf-new.png')}}" alt="image">
-                                </div>
-                      
-          </div>
-
-          
-
-
 
         </div> 
   </div>
