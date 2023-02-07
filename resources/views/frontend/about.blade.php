@@ -142,7 +142,7 @@
 
 <section>
     <div class="about" width="100%">
-            <h1 class="abouts text-center mt-5"><b> About</b></h1>
+            <h1 class="abouts text-center mt-5 poopins"><b> About</b></h1>
             
     </div>
 </section>
@@ -150,15 +150,15 @@
 <img src="{{asset('Image/basil-leaf.png')}}" alt="leaf" style="margin:auto;display:block;margin-top: -45px;">
 <section>
         <div class="Introduction" width="100%">
-            <h1 class=" text-center "><b>Introduction</b></h1>
+            <h1 class=" text-center poopins"><b>Introduction</b></h1>
             <p class="container-xl">Nankar Fashions  is a world class buying house with highly skilled Merchandiser to meet the challenge of the requirement of apparel sector in the world. The key management persons have wide long experience from yarn manufacturing to garments production and shipment. It is our believe that our expertise, knowledge and practical experience can easily offer better services to the customer and fill up their satisfaction. As all of us have come from liaison with the best manufacturers Bangladesh, we can handle the total affairs of the undertaking effectively and efficiently with a motto to provide best service to the customer.</p>
         </div>
 
         <div class="cha text-center">
-            <h1 class="pt-5">
+            <h1 class="pt-5 opensans">
                 OWNER & MANAGING DIRECTOR
             </h1>
-            <h3>Md. Arzu Mia Razu</h3>
+            <h3 class="roboto">Md. Arzu Mia Razu</h3>
         </div>
 
         <div class=" mt-5">
@@ -303,7 +303,7 @@
                                       <div class="col-md-9">
                                             <div class="bg">
                                               <div class="content">
-                                                  <h2>Certified Products</h2>
+                                                  <h2 class="poopins">Certified Products</h2>
                                                   <p>Nankar Fashion is one of the leading, influential and most experienced Garments Buying Agent located in Mirpur DOHS, Dhaka, The Capital City of Bangladesh.</p>
                                               </div>
                                             </div>
@@ -314,7 +314,7 @@
 
 
                                             <div class="garments text-left">
-                                                <h3>We Deal With Various Quality Garments Products!</h3> 
+                                                <h2 class="opensans text-align-justify">We Deal With Various Quality Garments Products!</h2> 
                                                 <img src="{{asset('Image/logo-leaf-new.png')}}" alt="image">
                                             </div>
 
@@ -338,7 +338,7 @@
                                                     <br>
                                                       <div class="text-white num d-flex border border rounded py-2" style="background-color:#7BAF42;">
                                                           <i class="fa fa-phone-square" aria-hidden="true" ></i>&emsp;
-                                                          +8801922221146
+                                                          +8801234567890
                                                       </div>
                                                     </div>
                                                                                 
