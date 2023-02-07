@@ -281,7 +281,7 @@
   <main id="main">
     <!-- <h1 class="all-cats text-center">Welcome To Nankar Fashions</h1> -->
     <header class="section-header">
-      <p>Welcome To Nankar Fashions</p>
+      <p>Welcome To CS Lee Knit Composite Ltd</p>
     </header>
     
     <!-- ======= About Section 1 ======= -->
@@ -409,10 +409,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">Sweater Products</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">KNITTING</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">pullover - v neck , crew neck, hi neck , mock neck, turtle neck, cardigan, hooded cardigan, vest, school dress, open cardigan, zipper or button cardigan, all kind of jaqwark knitted sweaters with fancy print, stone, enbroidery attached. we can do with 1.5gg, 3gg, 5gg,7gg,10gg,12gg,14gg sweater with any kind of washed and stitches sweaters.</p>
+                  <p class="text-center">At present we have capacity of 20 tons of knit fabrics per month.</p>
                 </div>
               </div>
             </div>
@@ -420,10 +420,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">Sweater Products</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">PRINTING</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">pullover - v neck , crew neck, hi neck , mock neck, turtle neck, cardigan, hooded cardigan, vest, school dress, open cardigan, zipper or button cardigan, all kind of jaqwark knitted sweaters with fancy print, stone, enbroidery attached. we can do with 1.5gg, 3gg, 5gg,7gg,10gg,12gg,14gg sweater with any kind of washed and stitches sweaters.</p>
+                  <p class="text-center">Our printing facility is equipped most modern machines from USA, UK and Japan with latest technology.</p>
                 </div>
               </div>
             </div>
@@ -431,10 +431,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">Sweater Products</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">EMBROIDERY</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">pullover - v neck , crew neck, hi neck , mock neck, turtle neck, cardigan, hooded cardigan, vest, school dress, open cardigan, zipper or button cardigan, all kind of jaqwark knitted sweaters with fancy print, stone, enbroidery attached. we can do with 1.5gg, 3gg, 5gg,7gg,10gg,12gg,14gg sweater with any kind of washed and stitches sweaters.</p>
+                  <p class="text-center">We have state-of-the-art fully computerized, embroidery machines to cater for the needs of our customers with precise accuracy.</p>
                 </div>
               </div>
             </div>
@@ -442,10 +442,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">Sweater Products</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">FINISHING</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">pullover - v neck , crew neck, hi neck , mock neck, turtle neck, cardigan, hooded cardigan, vest, school dress, open cardigan, zipper or button cardigan, all kind of jaqwark knitted sweaters with fancy print, stone, enbroidery attached. we can do with 1.5gg, 3gg, 5gg,7gg,10gg,12gg,14gg sweater with any kind of washed and stitches sweaters.</p>
+                  <p class="text-center">A qualified and highly trained team of professionals supervise the proper finishing of apparels in accordance with the customer’s requirements and code of conducts.</p>
                 </div>
               </div>
             </div>
@@ -453,10 +453,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">Sweater Products</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">EMBROIDERY</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">pullover - v neck , crew neck, hi neck , mock neck, turtle neck, cardigan, hooded cardigan, vest, school dress, open cardigan, zipper or button cardigan, all kind of jaqwark knitted sweaters with fancy print, stone, enbroidery attached. we can do with 1.5gg, 3gg, 5gg,7gg,10gg,12gg,14gg sweater with any kind of washed and stitches sweaters.</p>
+                  <p class="text-center">We have state-of-the-art fully computerized, embroidery machines to cater for the needs of our customers with precise accuracy.</p>
                 </div>
               </div>
             </div>
@@ -464,10 +464,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">Sweater Products</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">FINISHING</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">pullover - v neck , crew neck, hi neck , mock neck, turtle neck, cardigan, hooded cardigan, vest, school dress, open cardigan, zipper or button cardigan, all kind of jaqwark knitted sweaters with fancy print, stone, enbroidery attached. we can do with 1.5gg, 3gg, 5gg,7gg,10gg,12gg,14gg sweater with any kind of washed and stitches sweaters.</p>
+                  <p class="text-center">A qualified and highly trained team of professionals supervise the proper finishing of apparels in accordance with the customer’s requirements and code of conducts.</p>
                 </div>
               </div>
             </div>

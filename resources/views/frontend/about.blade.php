@@ -40,9 +40,7 @@
         .radius{
           border-radius: 2%;
         }
-        .mains{
-          display:flex;
-        }
+        
         .star{
           color:#FFBB1E;
         }
@@ -151,14 +149,14 @@
 <section>
         <div class="Introduction" width="100%">
             <h1 class=" text-center poopins"><b>Introduction</b></h1>
-            <p class="container-xl">Nankar Fashions  is a world class buying house with highly skilled Merchandiser to meet the challenge of the requirement of apparel sector in the world. The key management persons have wide long experience from yarn manufacturing to garments production and shipment. It is our believe that our expertise, knowledge and practical experience can easily offer better services to the customer and fill up their satisfaction. As all of us have come from liaison with the best manufacturers Bangladesh, we can handle the total affairs of the undertaking effectively and efficiently with a motto to provide best service to the customer.</p>
+            <p class="container-xl">2020, CS LEE started its voyage in limited extent at Jamgora, Ashulia, Dhaka. The company is dedicated to excellence in merchandising, product development, production. We have earned a reputation throughout the global apparel industry as one of the foremost factories in Bangladesh for our commitment to quality, timely delivery, and total value. Through our extensive sourcing network, we have the ability to effectively procure the best materials. Our customers rely on us to deliver the best quality products and superb service which enable them to successfully compete in the emerging marketplace.</p>
         </div>
 
         <div class="cha text-center">
             <h1 class="pt-5 opensans">
                 OWNER & MANAGING DIRECTOR
             </h1>
-            <h3 class="roboto">Md. Arzu Mia Razu</h3>
+            <h3 class="roboto">Md. XYX</h3>
         </div>
 
         <div class=" mt-5">
@@ -227,7 +225,7 @@
 <!-- End Counts Section -->
 
 <section class="new">
-  <div class="container-lg mains">
+  <div class="container-lg">
 
         <div class="row">
 
@@ -254,7 +252,7 @@
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                 </div>
 
-                                                <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">CS Lee Knit Composite Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
                                                 
 
                                             </div>
@@ -269,7 +267,7 @@
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                 </div>
-                                                <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">CS Lee Knit Composite Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
                                             </div>
                                             <div class="carousel-item">
                                               <img src="{{asset('Image/fdhf.png')}}" class="d-block w-100 radius" alt="...">
@@ -282,7 +280,7 @@
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                 </div>
-                                                <p class="mt-3">Nankar Fashions is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">CS Lee Knit Composite Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
                                               </div>
                                           </div>
                                         
@@ -304,7 +302,7 @@
                                             <div class="bg">
                                               <div class="content">
                                                   <h2 class="poopins">Certified Products</h2>
-                                                  <p>Nankar Fashion is one of the leading, influential and most experienced Garments Buying Agent located in Mirpur DOHS, Dhaka, The Capital City of Bangladesh.</p>
+                                                  <p> 100% Export Oriented Composite Knit Garments Manufacture & Exporter Company Of Bangladesh.</p>
                                               </div>
                                             </div>
                                         
@@ -338,7 +336,7 @@
                                                     <br>
                                                       <div class="text-white num d-flex border border rounded py-2" style="background-color:#7BAF42;">
                                                           <i class="fa fa-phone-square" aria-hidden="true" ></i>&emsp;
-                                                          +8801234567890
+                                                          +88- 02 9513828
                                                       </div>
                                                     </div>
                                                                                 

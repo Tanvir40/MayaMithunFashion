@@ -10,9 +10,9 @@
 
             <br>
 
-            <h2 class="text-center poopins">DESIGN AT OUR CORE, CARE FROM THE START.</h2>
+            <h2 class="text-center poopins">At present we have capacity of 20 tons of knit fabrics per month.</h2>
             <br>
-            <p class="text-center">We manage all key areas of the supply chain with dedicated teams allocated to your account to proactively offer support and guidance. From product development through to delivery our team have the experience and knowledge to deliver the right product on time at the right price.</p>
+            <p class="text-center">100% Export Oriented Composite Knit Garments Manufacture & Exporter Company Of Bangladesh.</p>
 
             <section id="about" class="about">
 
