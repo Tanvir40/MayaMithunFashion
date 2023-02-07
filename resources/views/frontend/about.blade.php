@@ -103,11 +103,46 @@
           width: 210px;
         }
       }  
+
+      @media only screen and (max-width: 992px) and (min-width: 772px) {
+        .about{
+            height:190px;
+            background-color:#F8F6F3;
+        }
+          .big-img{
+          margin-top:-62px !important; 
+          background-color:#F8F6F3;
+          width:100%;
+          height:560px;
+          border-radius:18px;
+        }
+        .big-imgs{
+          border-radius:8px;
+          width:300px;
+          position: absolute;
+          padding-right: auto;
+        }
+        .text{
+          padding-top: 320px;
+          padding-right:30px;
+          font-size: 15px;
+          display:block;
+          text-align:justify;
+        }
+        .quality{
+          padding:20px;
+        }
+        .num {
+          padding-left: 30px !important;
+          border-radius: 26px !important;
+          width: 210px;
+        }
+      }
     </style>
 
 <section>
     <div class="about" width="100%">
-            <h1 class="abouts text-center mt-5"><b> About</b></h1>
+            <h1 class="abouts text-center mt-5 poopins"><b> About</b></h1>
             
     </div>
 </section>
@@ -115,15 +150,15 @@
 <img src="{{asset('Image/basil-leaf.png')}}" alt="leaf" style="margin:auto;display:block;margin-top: -45px;">
 <section>
         <div class="Introduction" width="100%">
-            <h1 class=" text-center "><b>Introduction</b></h1>
+            <h1 class=" text-center poopins"><b>Introduction</b></h1>
             <p class="container-xl">Nankar Fashions  is a world class buying house with highly skilled Merchandiser to meet the challenge of the requirement of apparel sector in the world. The key management persons have wide long experience from yarn manufacturing to garments production and shipment. It is our believe that our expertise, knowledge and practical experience can easily offer better services to the customer and fill up their satisfaction. As all of us have come from liaison with the best manufacturers Bangladesh, we can handle the total affairs of the undertaking effectively and efficiently with a motto to provide best service to the customer.</p>
         </div>
 
         <div class="cha text-center">
-            <h1 class="pt-5">
+            <h1 class="pt-5 opensans">
                 OWNER & MANAGING DIRECTOR
             </h1>
-            <h3>Md. Arzu Mia Razu</h3>
+            <h3 class="roboto">Md. Arzu Mia Razu</h3>
         </div>
 
         <div class=" mt-5">
@@ -192,7 +227,7 @@
 <!-- End Counts Section -->
 
 <section class="new">
-  <div class="container mains">
+  <div class="container-lg mains">
 
         <div class="row">
 
@@ -260,21 +295,26 @@
                                 <div class="col-md-6">
 
                                   <div class="row text-center">
-                                    <div class="col-md-3">
-                                          <img src="{{asset('Image/Nankar-5-150x150.png')}}" alt="">
-                                              </div>
-                                              <div class="col-md-9">
-                                              <div class="bg">
-                                              <div class="content">
-                                                <h2>Certified Products</h2>
-                                                <p>Nankar Fashion is one of the leading, influential and most experienced Garments Buying Agent located in Mirpur DOHS, Dhaka, The Capital City of Bangladesh.</p>
-                                              </div>
+
+                                  <div class="row">
+                                      <div class="col-md-3">
+                                            <img src="{{asset('Image/Nankar-5-150x150.png')}}" alt="" width="150px">
                                       </div>
-                                      
+                                      <div class="col-md-9">
+                                            <div class="bg">
+                                              <div class="content">
+                                                  <h2 class="poopins">Certified Products</h2>
+                                                  <p>Nankar Fashion is one of the leading, influential and most experienced Garments Buying Agent located in Mirpur DOHS, Dhaka, The Capital City of Bangladesh.</p>
                                               </div>
                                             </div>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+
+
                                             <div class="garments text-left">
-                                                <h1>We Deal With Various Quality Garments Products!</h1> 
+                                                <h2 class="opensans text-align-justify">We Deal With Various Quality Garments Products!</h2> 
                                                 <img src="{{asset('Image/logo-leaf-new.png')}}" alt="image">
                                             </div>
 
@@ -298,7 +338,7 @@
                                                     <br>
                                                       <div class="text-white num d-flex border border rounded py-2" style="background-color:#7BAF42;">
                                                           <i class="fa fa-phone-square" aria-hidden="true" ></i>&emsp;
-                                                          +8801922221146
+                                                          +8801234567890
                                                       </div>
                                                     </div>
                                                                                 

@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
@@ -59,6 +61,10 @@
     .roboto{
       font-family: 'Roboto', sans-serif;
       color: black !important;
+    }
+    .opensans{
+      font-family: 'Open Sans', sans-serif;
+      font-weight:800;
     }
     
     #hero{
