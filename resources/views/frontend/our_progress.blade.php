@@ -12,7 +12,7 @@
 
             <h2 class="text-center poopins">At present we have capacity of 20 tons of knit fabrics per month.</h2>
             <br>
-            <p class="text-center">100% Export Oriented Composite Knit Garments Manufacture & Exporter Company Of Bangladesh.</p>
+            <p class="text-center">100% Export Oriented Maya Mithu Fashion Ltd Garments Manufacture & Exporter Company Of Bangladesh.</p>
 
             <section id="about" class="about">
 

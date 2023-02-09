@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CS Lee Knit Composite Ltd.</title>
+  <title>Maya Mithu Fashion Ltd</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
@@ -35,12 +35,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{asset('backend/css/font-awesome.min.css')}}"/>
-  <!-- =======================================================
-  * Template Name: FlexStart - v1.9.0
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
   <style type="text/css">
 
     /* #slider-section{
@@ -224,16 +219,16 @@
         <li class="pro px-3">Products</li>
         <div class="category-list">
           <ul class="gro">
-            <li class="categories shadow-lg">buhlbhul</li>
-            <li class="categories shadow-lg">dhzsdrh</li>
-            <li class="categories shadow-lg">dhzsdrh</li>
-            <li class="categories shadow-lg">dhzsdrh</li>
-            <li class="categories shadow-lg">dhzsbhulbh</li>
-            <li class="categories shadow-lg">buhlbhul</li>
-            <li class="categories shadow-lg">dhzsdrh</li>
-            <li class="categories shadow-lg">dhzsdrh</li>
-            <li class="categories shadow-lg">dhzsdrh</li>
-            <li class="categories shadow-lg">dhzsbhulbhudrh</li>
+            <li class="categories shadow-lg">Category 1</li>
+            <li class="categories shadow-lg">Category 2</li>
+            <li class="categories shadow-lg">Category 3</li>
+            <li class="categories shadow-lg">Category 4</li>
+            <li class="categories shadow-lg">Category 5</li>
+            <li class="categories shadow-lg">Category 6</li>
+            <li class="categories shadow-lg">Category 7</li>
+            <li class="categories shadow-lg">Category 8</li>
+            <li class="categories shadow-lg">Category 9</li>
+            <li class="categories shadow-lg">Category 10</li>
           </ul>
     </div>
       </a>
@@ -246,11 +241,11 @@
     <!-- Nav bar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto  roboto" href="{{url('/')}}">Home</a></li>
+          <li><a class="nav-link scrollto roboto" href="{{url('/')}}">Home</a></li>
           <li><a class="nav-link scrollto roboto" href="{{route('about')}}">About US</a></li>
           <li><a class="nav-link scrollto roboto" href="{{route('our_progress')}}">OUR PROGRESS</a></li>
           <li><a class="nav-link scrollto roboto" href="{{route('contact')}}">Contact</a></li>
-
+        </ul>
           @if(isset($narbar))
 
             @foreach($narbar as $data)

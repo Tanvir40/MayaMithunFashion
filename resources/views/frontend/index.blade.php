@@ -86,7 +86,7 @@
 <section class="img-pro mb-5 p-0">
       <div class="products">
         <aside class="image-side">
-            <img width="100%" src="{{asset('Image/UP-TO-70-OFF-2-1536x768.png')}}" alt="">
+            <img width="100%" src="{{asset('Image/ersgyear.jpg')}}" alt="...">
         </aside>
 
         <aside class="product-side">
@@ -281,7 +281,7 @@
   <main id="main">
     <!-- <h1 class="all-cats text-center">Welcome To Nankar Fashions</h1> -->
     <header class="section-header">
-      <p>Welcome To CS Lee Knit Composite Ltd</p>
+      <p>Welcome To Maya Mithu Fashion Ltd.</p>
     </header>
     
     <!-- ======= About Section 1 ======= -->

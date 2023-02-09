@@ -22,7 +22,7 @@
   <div class="footer-top">
     <div class="container">
       <div class="row gy-4">
-        <div class="col-lg-6 col-md-12 footer-info">
+        <div class="col-lg-4 col-md-12 footer-info">
           <a href="{{url('/')}}" class="logo d-flex align-items-center">
             <img src="@if(isset($websetup->icon)){{$websetup->icon}}@endif" width="120" alt="">
           </a>
@@ -37,11 +37,21 @@
           </div>
         </div>
 
-        <div class="col-lg-6 col-12 footer-links">
+        <div class="col-lg-4 col-12 footer-links">
           <h4>Google map</h4>
 
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.14275447265!2d89.9850758153248!3d23.99073558546863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe036cecc85593%3A0x361e586da8a6bfff!2sTara%20Mia%20Hen%20Store!5e0!3m2!1sbn!2sbd!4v1670312810293!5m2!1sbn!2sbd" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           
+        </div>
+        
+        <div class="col-lg-4 col-12">
+            <h2 class="mt-2">Links</h2>
+          <ul>
+          <li><a class=" roboto" href="{{url('/')}}">Home</a></li>
+          <li><a class=" roboto" href="{{route('about')}}">About US</a></li>
+          <li><a class=" roboto" href="{{route('our_progress')}}">OUR PROGRESS</a></li>
+          <li><a class=" roboto" href="{{route('contact')}}">Contact</a></li>
+          </ul>
         </div>
 
 
@@ -53,7 +63,7 @@
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong><span>Soft Creation</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>Maya Mithu Fashion Ltd.</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->

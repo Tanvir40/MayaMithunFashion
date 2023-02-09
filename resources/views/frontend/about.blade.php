@@ -149,19 +149,19 @@
 <section>
         <div class="Introduction" width="100%">
             <h1 class=" text-center poopins"><b>Introduction</b></h1>
-            <p class="container-xl">2020, CS LEE started its voyage in limited extent at Jamgora, Ashulia, Dhaka. The company is dedicated to excellence in merchandising, product development, production. We have earned a reputation throughout the global apparel industry as one of the foremost factories in Bangladesh for our commitment to quality, timely delivery, and total value. Through our extensive sourcing network, we have the ability to effectively procure the best materials. Our customers rely on us to deliver the best quality products and superb service which enable them to successfully compete in the emerging marketplace.</p>
+            <p class="container-xl">2020, Maya Mithu Fashion Ltd started its voyage in limited extent at Jamgora, Ashulia, Dhaka. The company is dedicated to excellence in merchandising, product development, production. We have earned a reputation throughout the global apparel industry as one of the foremost factories in Bangladesh for our commitment to quality, timely delivery, and total value. Through our extensive sourcing network, we have the ability to effectively procure the best materials. Our customers rely on us to deliver the best quality products and superb service which enable them to successfully compete in the emerging marketplace.</p>
         </div>
 
         <div class="cha text-center">
             <h1 class="pt-5 opensans">
-                OWNER & MANAGING DIRECTOR
+                Managing Director
             </h1>
-            <h3 class="roboto">Md. XYX</h3>
+            <h3 class="roboto">Md. Nahid Hasan Mukul</h3>
         </div>
 
         <div class=" mt-5">
             <center>
-            <img class="img bg-body " src="{{asset('Image/tanvir.jpg')}}" alt="photo" width="260px">
+            <img class="img bg-body " src="{{asset('Image/ManagingDirector.jpeg')}}" alt="photo" width="260px">
             </center>
         </div>
 </section>
@@ -231,7 +231,6 @@
 
                         <div class="col-md-6">
                             <div class="big-img">
-                                        <!-- <img class="big-imgs" src="{{asset('Image/dftu.jpeg')}}" alt="image"> -->
                                         <div id="carouselExampleCaptions" class="big-imgs carousel slide" data-bs-ride="carousel">
                                           <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -240,7 +239,7 @@
                                           </div>
                                           <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                              <img src="{{asset('Image/dghd.jpg')}}" class="d-block w-100 radius" alt="...">
+                                              <img src="{{asset('Image/2.jpeg')}}" class="d-block w-100 radius" alt="...">
                                               <div class="carousel-caption d-none d-md-block">
                                                 </div>
 
@@ -252,12 +251,12 @@
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                 </div>
 
-                                                <p class="mt-3">CS Lee Knit Composite Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">Maya Mithu Fashion Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
                                                 
 
                                             </div>
                                             <div class="carousel-item">
-                                              <img src="{{asset('Image/dftu.jpeg')}}" class="d-block w-100 radius" alt="...">
+                                              <img src="{{asset('Image/1.jpeg')}}" class="d-block w-100 radius" alt="...">
                                               <div class="carousel-caption d-none d-md-block">
                                                 </div>
                                                 <div class="mt-4 text-center star">
@@ -267,21 +266,9 @@
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                   <i class="fa fa-star" aria-hidden="true"></i>
                                                 </div>
-                                                <p class="mt-3">CS Lee Knit Composite Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">Maya Mithu Fashion Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
                                             </div>
-                                            <div class="carousel-item">
-                                              <img src="{{asset('Image/fdhf.png')}}" class="d-block w-100 radius" alt="...">
-                                              <div class="carousel-caption d-none d-md-block">
-                                                </div>
-                                                <div class="mt-4 text-center star">
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                </div>
-                                                <p class="mt-3">CS Lee Knit Composite Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
-                                              </div>
+                                            
                                           </div>
                                         
                                         </div>
@@ -302,7 +289,7 @@
                                             <div class="bg">
                                               <div class="content">
                                                   <h2 class="poopins">Certified Products</h2>
-                                                  <p> 100% Export Oriented Composite Knit Garments Manufacture & Exporter Company Of Bangladesh.</p>
+                                                  <p> 100% Export Oriented Maya Mithu Fashion Ltd Garments Manufacture & Exporter Company Of Bangladesh.</p>
                                               </div>
                                             </div>
                                         
