@@ -124,7 +124,6 @@ class mainController extends Controller
         }
     }
 
-
 /*For Slider */
 
     public function slider_add(){
@@ -139,16 +138,15 @@ class mainController extends Controller
         return view("backend.sliderlist", compact("slider"));
     }
 
-
     public function slider_del($id){
         slider::find($id)->delete();
         return redirect()->back();
     }
 
     public function slider_up($id){
-        return view("backend.sliderupdate", compact("id"));
+        $slider= slider::find($id);
+        return view("backend.sliderupdate", compact("slider"));
     }
-
 
     public function sli_Img_Up(Request $req){
 
@@ -156,21 +154,32 @@ class mainController extends Controller
 
             $req->validate([
                 //"tea_img" => "required|mimes:jpg,png|max:300",
-                "image" => "required|image"
+                "name" => "required"
             ]);
 
-            $slider = slider::find($req->id);
-            @unlink($slider->name);
+            if($req->image != null){
+                $slider = slider::find($req->id);
+                @unlink($slider->image);
+    
+                $file   = $req->image;
+                $ext    = $file->getClientOriginalExtension();
+                $exfile = substr(md5(time()), 0, 10).".".$ext;
+    
+                $slider = slider::find($req->id);
+                $slider->image = "Image/slider/".$exfile;
+                $slider->name = $req->name;
+                $slider->save();
+                $file->move("Image/slider/", $exfile);
+                return redirect("/sliderlist");
+            }
+            else{
+                $slider = slider::find($req->id);
+                $slider->name = $req->name;
+                $slider->save();
+                return redirect("/sliderlist");
+            }
 
-            $file   = $req->image;
-            $ext    = $file->getClientOriginalExtension();
-            $exfile = substr(md5(time()), 0, 10).".".$ext;
-
-            $slider = slider::find($req->id);
-            $slider->name = "Image/slider/".$exfile;
-            $slider->save();
-            $file->move("Image/slider/", $exfile);
-            return redirect("/sliderlist");
+           
 
          }
         
@@ -197,17 +206,20 @@ class mainController extends Controller
             $exfile = substr(md5(time()), 0, 10).".".$ext;
 
             $slider = new slider();
-            $slider->name = "Image/slider/".$exfile;
+            $slider->image = "Image/slider/".$exfile;
+            $slider->name = $req->name;
             $slider->save();
 
             $file->move("Image/slider/", $exfile);
 
-            return redirect()->back()->with("image_sucess","Image uploaded successfully!");
+            return redirect()->back()->with("image_sucess","Category uploaded successfully!");
 
          }
 
 
     }
+
+    
 
 
 

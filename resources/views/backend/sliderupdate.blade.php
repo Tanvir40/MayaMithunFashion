@@ -9,7 +9,7 @@
       <div class="card my-2">
       <div class="card-body">
           <div style="overflow: hidden;">
-            <h3 class="float-left">Update slider</h3>
+            <h3 class="float-left">Update Category</h3>
           </div>
           <hr>
 
@@ -36,13 +36,19 @@
                       <div class="mb-3">
                         <label for="image" class="form-label">Select Image</label>
 
-                        <input type="hidden" name="id" value="{{$id}}">
-
+                        <input type="hidden" name="id" value="{{$slider->id}}">
                         <input type="file" class="form-control" id="image" aria-describedby="emailHelp" name="image" accept="image/*">
 
                         <small class="form-text">* Image size 1920x550 px.</small>
                       </div>
-                      <button type="submit" class="btn btn-primary">Upload</button>
+
+                      <div class="mb-3">
+                        <label for="image" class="form-label">Name</label>
+
+                        <input type="text" value="{{$slider->name}}" class="form-control" name="name" >
+
+                      </div>
+                      <button type="submit" class="btn btn-primary">Update</button>
 
                     </form>
  

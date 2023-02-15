@@ -282,8 +282,8 @@
                                   <div class="row text-center">
 
                                   <div class="row">
-                                      <div class="col-md-3">
-                                            <img src="{{asset('Image/Nankar-5-150x150.png')}}" alt="" width="150px">
+                                      <div class="col-md-3 mt-5">
+                                            <img src="{{$websetup->icon}}" alt="" width="150px">
                                       </div>
                                       <div class="col-md-9">
                                             <div class="bg">

@@ -9,7 +9,7 @@
       <div class="card my-2">
       <div class="card-body">
           <div style="overflow: hidden;">
-            <h3 class="float-left">Add new slider</h3>
+            <h3 class="float-left">Add new Category</h3>
           </div>
           <hr>
 
@@ -36,6 +36,9 @@
                   <label for="image" class="form-label">Select Image</label>
                   <input type="file" class="form-control" id="image" aria-describedby="emailHelp" name="image" accept="image/*">
                   <small class="form-text">* Image size 1920x600 px.</small>
+                </div> <div class="mb-3">
+                  <label for="name" class="form-label">Category Name</label>
+                  <input type="text" class="form-control" aria-describedby="emailHelp" name="name" >
                 </div>
                 <button type="submit" class="btn btn-primary">Upload</button>
 

@@ -5,7 +5,7 @@
 <br><br>
 <section class="imagess">
   <div class="container">
-  <img width="100%" src="{{asset('Image/Capture1.PNG')}}" alt="image">
+  <img width="100%" src="{{asset($bannersectionimage->image_one)}}" alt="image">
   </div>
 </section>
 
@@ -68,11 +68,11 @@
           @foreach($slider as $key => $value)
             @if($key == 0)
                 <div class="item">
-                  <img src="{{$value->name}}" class="d-block w-100 " alt="...">
+                  <img src="{{$value->image}}" style="max-width:150px !important" class="d-block w-100 " alt="...">
                 </div>
             @else
                 <div class="item">
-                  <img src="{{$value->name}}" class="d-block w-100 " alt="...">
+                  <img src="{{$value->image}}" style="max-width:150px !important" class="d-block w-100 " alt="...">
                 </div>
             @endif
           @endforeach
@@ -86,7 +86,7 @@
 <section class="img-pro mb-5 p-0">
       <div class="products">
         <aside class="image-side">
-            <img width="100%" src="{{asset('Image/ersgyear.jpg')}}" alt="...">
+            <img width="100%" src="{{asset($bannersectionimage->image_three)}}" alt="...">
         </aside>
 
         <aside class="product-side">
@@ -327,16 +327,16 @@
 
             @if(isset($bannersection->description))
 
-            <img src="{{asset($bannersection->image)}}" class="img-fluid" alt="">
+            <img src="{{asset($bannersectionsec->image)}}" class="img-fluid" alt="">
 
             @endif
 
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h2>@if(isset($bannersection->name)){{$bannersection->name}}@endif</h2>
+              <h2>@if(isset($bannersectionsec->name)){{$bannersectionsec->name}}@endif</h2>
               <p>
-                @if(isset($bannersection->description)){{$bannersection->description}}@endif
+                @if(isset($bannersectionsec->description)){{$bannersectionsec->description}}@endif
               </p>
             </div>
           </div>
@@ -392,7 +392,7 @@
     </section> --><!-- End Values Section -->
 
     <section>
-      <img width="100%" src="{{asset('Image/Capture1.PNG')}}" alt="">
+      <img width="100%" src="{{asset($bannersectionimage->image_two)}}" alt="">
     </section>
 
 
@@ -406,71 +406,18 @@
       <div class="container">
           <div class="row">
 
+          @foreach($our_service as $service)
             <div class="col-sm-12 col-md-4 col-lg-4">
               <div class="card border-0">
                 <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">KNITTING</h2>
+                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">{{$service->heading}}</h2>
                 </div>
                 <div class="card-body border-0">
-                  <p class="text-center">At present we have capacity of 20 tons of knit fabrics per month.</p>
+                  <p class="text-center">{{$service->text}}</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card border-0">
-                <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">PRINTING</h2>
-                </div>
-                <div class="card-body border-0">
-                  <p class="text-center">Our printing facility is equipped most modern machines from USA, UK and Japan with latest technology.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card border-0">
-                <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">EMBROIDERY</h2>
-                </div>
-                <div class="card-body border-0">
-                  <p class="text-center">We have state-of-the-art fully computerized, embroidery machines to cater for the needs of our customers with precise accuracy.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card border-0">
-                <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">FINISHING</h2>
-                </div>
-                <div class="card-body border-0">
-                  <p class="text-center">A qualified and highly trained team of professionals supervise the proper finishing of apparels in accordance with the customer’s requirements and code of conducts.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card border-0">
-                <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">EMBROIDERY</h2>
-                </div>
-                <div class="card-body border-0">
-                  <p class="text-center">We have state-of-the-art fully computerized, embroidery machines to cater for the needs of our customers with precise accuracy.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="card border-0">
-                <div class="card-header bg-transparent border-0">
-                  <h2 class="text-center fw-bolder" style="font-family: 'Poppins', sans-serif; font-weight:300;color:#000;">FINISHING</h2>
-                </div>
-                <div class="card-body border-0">
-                  <p class="text-center">A qualified and highly trained team of professionals supervise the proper finishing of apparels in accordance with the customer’s requirements and code of conducts.</p>
-                </div>
-              </div>
-            </div>
+          @endforeach
             
           </div>
         </div>
@@ -972,6 +919,8 @@
 
     </section>
 
+    <script></script>
+
     @endif
 
 
@@ -986,3 +935,26 @@
 
 
     @include('../frontend/inc/footer')
+    <script>
+$('.owl-carousel').owlCarousel({
+  loop:true,
+
+  nav:true,
+  dots:false,
+  slideTransition: 'linear',
+  autoplay:true,
+  autoplayTimeout:3000,
+  autoplaySpeed: 3000,
+  responsive:{
+      0:{
+          items:2
+      },
+      600:{
+          items:4
+      },
+      1000:{
+          items:6
+      }
+  }
+})
+</script>

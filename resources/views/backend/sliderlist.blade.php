@@ -9,7 +9,7 @@
       <div class="card my-2">
       <div class="card-body">
           <div style="overflow: hidden;">
-            <h3 class="float-left">Add slider list</h3>
+            <h3 class="float-left">Add Category list</h3>
           </div>
           <hr>
 
@@ -18,8 +18,9 @@
           <table class="table">
               <tbody>
                 <tr>
-                  <th width="20%">#SL</th>
-                  <th width="50%">#Image</th>
+                  <th width="10%">#SL</th>
+                  <th width="20%">#Name</th>
+                  <th width="30%">#Image</th>
                   <th width="30%">#Action</th>
                 </tr>
 
@@ -34,8 +35,8 @@
                 <tr>
 
                     <td>{{$i++}}</td>
-                    <td><img src="{{$data->name}}" width="80"></td>
-
+                    <td>{{$data->name}}</td>
+                    <td><img src="{{$data->image}}" width="80"></td>
                     <td>
                       <a href="{{url('sliderup', $data->id)}}">
                         <button class="btn btn-primary"><i class="fa fa-edit"></i></button>

@@ -91,29 +91,7 @@
 <!-- Template Main JS File -->
 <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
-<script>
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  dots:false,
-  slideTransition: 'linear',
-  autoplay:true,
-  autoplayTimeout:3000,
-  autoplaySpeed: 3000,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:3
-      }
-  }
-})
-</script>
+
 
 
 <script type="text/javascript">

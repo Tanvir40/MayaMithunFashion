@@ -13,6 +13,9 @@ use App\Models\ContactInfo;
 use App\Models\OurClient;
 use App\Models\Team;
 use App\Models\bannersection;
+use App\Models\bannersectionsec;
+use App\Models\bannersectionimage;
+use App\Models\our_service;
 
 class frontEndController extends Controller
 {
@@ -50,7 +53,20 @@ class frontEndController extends Controller
       if (bannersection::count() > 0) {
          $bannersection = bannersection::find(1);
       }
+      $bannersectionsec = null;
+      if (bannersectionsec::count() > 0) {
+         $bannersectionsec = bannersectionsec::find(1);
+      }
 
+      $bannersectionimage = null;
+      if (bannersectionimage::count() > 0) {
+         $bannersectionimage = bannersectionimage::find(1);
+      }
+
+      $our_service = null;
+      if (our_service::count() > 0) {
+         $our_service = our_service::orderBy('id', 'desc')->get();
+      }
 
       $teams         = Team::get();
       $contact       = ContactInfo::get();
@@ -59,7 +75,7 @@ class frontEndController extends Controller
       $brands_count  = ourbrands::count();
       $teams_count   = Team::count();
 
-      return view('frontend.index', compact("aboutus","slider","ourbrands","websetup", "narbar","teams","contact","OurClient","clint_count","brands_count","teams_count","bannersection"));
+      return view('frontend.index', compact("aboutus","slider","ourbrands","websetup", "narbar","teams","contact","OurClient","clint_count","brands_count","teams_count","bannersection","bannersectionsec","bannersectionimage","our_service"));
 
       
     }
@@ -91,9 +107,13 @@ class frontEndController extends Controller
       if (narbar::count() > 0) {
          $narbar = narbar::get();
       }
+      $slider = null;
+      if (slider::count() > 0) {
+         $slider = slider::get();
+      }
 
       $contact       = ContactInfo::get();
-   return view('frontend.contact' , compact("websetup", "narbar","contact"));
+   return view('frontend.contact' , compact("websetup", "narbar","contact","slider"));
   }
 
   public function our_progress(){
@@ -111,9 +131,13 @@ class frontEndController extends Controller
       if (bannersection::count() > 0) {
          $bannersection = bannersection::find(1);
       }
+      $slider = null;
+      if (slider::count() > 0) {
+         $slider = slider::get();
+      }
 
       $contact       = ContactInfo::get();
-   return view('frontend.our_progress' , compact("websetup", "narbar","contact" ,"bannersection"));
+   return view('frontend.our_progress' , compact("websetup", "narbar","contact" ,"bannersection" ,"slider"));
   }
 
 

@@ -219,16 +219,15 @@
         <li class="pro px-3">Products</li>
         <div class="category-list">
           <ul class="gro">
-            <li class="categories shadow-lg">Category 1</li>
-            <li class="categories shadow-lg">Category 2</li>
-            <li class="categories shadow-lg">Category 3</li>
-            <li class="categories shadow-lg">Category 4</li>
-            <li class="categories shadow-lg">Category 5</li>
-            <li class="categories shadow-lg">Category 6</li>
-            <li class="categories shadow-lg">Category 7</li>
-            <li class="categories shadow-lg">Category 8</li>
-            <li class="categories shadow-lg">Category 9</li>
-            <li class="categories shadow-lg">Category 10</li>
+          @if(isset($slider))
+          @foreach($slider as $key => $value)
+            @if($key == 0)
+                <li class="categories shadow-lg">{{$value->name}}</li>
+            @else
+            <li class="categories shadow-lg">{{$value->name}}</li>
+            @endif
+          @endforeach
+        @endif
           </ul>
     </div>
       </a>

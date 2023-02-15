@@ -23,38 +23,26 @@ use App\Http\Controllers\TeamController;
 Route::get('/login', [loginController::class,"user_login"])->name("login");
 Route::post('/loging', [loginController::class,"user_loging"])->name("loging.user_loging");
 
-
-
-
 Route::group(["middleware"=>"auth"], function(){
 
 /*For loginController controller */
     Route::get('/admin', [loginController::class,"admin_user"]);
     Route::get('/logout', [loginController::class,"logout_user"]);
 
-
-
 /*For mainController controller */
     Route::get('/aboutus', [mainController::class,"about_us"]);
     Route::post('/about', [mainController::class,"about_insert"])->name("about.about_insert");
 
-
-
     Route::get('/slideradd', [mainController::class,"slider_add"]);
     Route::post('/sliderupload', [mainController::class,"slider_upload"])->name("sliderupload.slider_upload");
-
 
     Route::get('/sliderlist', [mainController::class,"slider_list"]);
     Route::get('/sliderdel/{id}', [mainController::class,"slider_del"]);
     Route::get('/sliderup/{id}', [mainController::class,"slider_up"]);
     Route::post('/sliImgUp', [mainController::class,"sli_Img_Up"])->name("sliImgUp.sli_Img_Up");
 
-
-
     Route::get('/websetup', [mainController::class,"webset_up"]);
     Route::post('/websetupinsert', [mainController::class,"websetup_insert"])->name("websetupinsert.websetup_insert");
-
-
 
 // tanvir created routes start
     //team controller
@@ -91,13 +79,6 @@ Route::group(["middleware"=>"auth"], function(){
 //>>>>>>> main
 //// tanvir created routes end
 
-
-
-
-
-
-
-
     /*For ourbrandsController controller */
 
     Route::get('/ourBrands', [ourbrandsController::class,"our_Brands"]);
@@ -107,15 +88,19 @@ Route::group(["middleware"=>"auth"], function(){
     Route::post('/brandsupdate', [ourbrandsController::class,"brands_update"])->name("brandsupdate.brands_update");
     Route::get('/ourbranddel/{id}', [ourbrandsController::class,"ourbrand_del"]);
 
-
-
-
     Route::get('/bannersection', [ourbrandsController::class,"banner_section"]);
     Route::post('/bannersectionupdate', [ourbrandsController::class,"banner_section_update"])->name("bannersectionupdate.banner_section_update");
 
+    Route::get('/bannersection_image', [ourbrandsController::class,"banner_section_image"]);
+    Route::post('/bannersectionupdate/image', [ourbrandsController::class,"banner_section_update_image"])->name("bannersectionupdate.banner_section_update_image");
+    Route::post('/bannersectionupdate/image/two', [ourbrandsController::class,"banner_section_update_image_two"])->name("bannersectionupdate.banner_section_update_image_two");
+    Route::post('/bannersectionupdate/image/three', [ourbrandsController::class,"banner_section_update_image_three"])->name("bannersectionupdate.banner_section_update_image_three");
 
+    Route::post('/bannersectionupdates', [ourbrandsController::class,"banner_section_updates"])->name("bannersectionupdate.banner_section_updates");
 
-
+    Route::get('/our-service', [ourbrandsController::class,"our_service"])->name("our_service");
+    Route::post('/our-services', [ourbrandsController::class,"our_services"])->name("our_services");
+    Route::get('/our-services-del/{id}', [ourbrandsController::class,"our_services_del"]);
     /*For pageController controller */
 
     Route::get('/pagecreate', [pageController::class,"page_create"]);
@@ -125,7 +110,6 @@ Route::group(["middleware"=>"auth"], function(){
     Route::post('/pageupdate', [pageController::class,"page_update"])->name("pageupdate.page_update");
     Route::get('/pagedel/{id}', [pageController::class,"page_del"]);
 
-
     Route::get('/profile', [pageController::class,"profile_user"]);
     Route::post('/profileupdate', [pageController::class,"profile_update"])->name("profileupdate.profile_update");
 
@@ -134,13 +118,23 @@ Route::group(["middleware"=>"auth"], function(){
     Route::get('/createnavbar',[pageController::class,"create_navbar"]);
     Route::post('/navbarinsert',[pageController::class,"navbar_insert"])->name("navbarinsert.navbar_insert");
 
-
     Route::get('/subcreatenavbar',[pageController::class,"subcreate_navbar"]);
     Route::post('/subnavbarinsert',[pageController::class,"subnavbar_insert"])->name("subnavbarinsert.subnavbar_insert");
 
+    //about us route
+    Route::get('/introduction', [mainController::class,"introduction"])->name("introduction");
+    Route::post('/introduction/post', [mainController::class,"introduction_post"])->name("introduction_post");
+
+    Route::get('/managingdirector', [mainController::class,"managingdirector"]);
+    Route::post('/managingdirector/post', [mainController::class,"managingdirector_post"])->name("managingdirector_post");
+
+    Route::get('/review', [mainController::class,"review"]);
+    Route::post('/review/post', [mainController::class,"review_post"])->name("review_post");
+
+    Route::get('/blog', [mainController::class,"blog"]);
+    Route::post('/blog/post', [mainController::class,"blog_post"])->name("blog_post");
+
 });
-
-
 
 /*For frontEndController controller */
     Route::get('/', [frontEndController::class,"homeContent"]);

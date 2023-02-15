@@ -7,7 +7,7 @@
               <li class="p-1"><a href="{{url('/admin')}}"><i class="fa fa-tachometer"></i>Dashboard</a>
               </li>
 
-              <li class="p-1"><a href="#select-1" data-toggle="collapse"><i class="fa fa-th-large"></i>Slider</a>
+              <li class="p-1"><a href="#select-1" data-toggle="collapse"><i class="fa fa-th-large"></i>Category</a>
                   <ul class="collapse <?php 
 
                   if(Request::path() == "slideradd" || Request::path() == "sliderlist"){
@@ -15,22 +15,75 @@
                   }
 
                 ?> list-unstyled ml-4" id="select-1" data-parent="#accordian">
-                    <li><a href="{{url('/slideradd')}}">Add slider</a></li>
-                    <li><a href="{{url('/sliderlist')}}">Slider list</a></li>
+                    <li><a href="{{url('/slideradd')}}">Add Category</a></li>
+                    <li><a href="{{url('/sliderlist')}}">Category list</a></li>
+                  </ul>
+              </li>
+
+              <li class="p-1"><a href="#select-18" data-toggle="collapse"><i class="fa fa-th-large"></i>Product</a>
+                  <ul class="collapse <?php 
+
+                  if(Request::path() == "sliderlist"){
+                    echo "show";
+                  }
+
+                ?> list-unstyled ml-4" id="select-18" data-parent="#accordian">
+                    <li><a href="">Add Product</a></li>
+                    <li><a href="">Product list</a></li>
                   </ul>
               </li>
 
               <li class="p-1"><a href="#select-5" data-toggle="collapse"><i class="fa fa-meetup"></i>Banner section</a>
                   <ul class="collapse <?php 
 
-                  if(Request::path() == "bannersection"){
+                  if(Request::path() == "bannersection" || Request::path() == "bannersection_image"){
+                    echo "show";
+                  }
+                ?> list-unstyled ml-4" id="select-5" data-parent="#accordian">
+                    <li><a href="{{url('/bannersection')}}">Banner (with text)</a></li>
+                    <li><a href="{{url('/bannersection_image')}}">Image Banner</a></li>
+                  </ul>
+              </li>
+
+
+              <li class="p-1"><a href="#select-8" data-toggle="collapse"><i class="fa fa-meetup"></i>About Us</a>
+                  <ul class="collapse <?php 
+
+                  if(Request::path() == "introduction" || Request::path() == "managingdirector" || Request::path() == "review"){
+                    echo "show";
+                  }
+                ?> list-unstyled ml-4" id="select-8" data-parent="#accordian">
+                    <li><a href="{{url('introduction')}}">Introduction</a></li>
+                    <li><a href="{{url('managingdirector')}}">Managing Director</a></li>
+                    <li><a href="{{url('review')}}">Review</a></li>
+                  </ul>
+              </li>
+
+              <li class="p-1"><a href="#select-9" data-toggle="collapse"><i class="fa fa-meetup"></i>OUR PROGRESS</a>
+                  <ul class="collapse <?php 
+
+                  if(Request::path() == "blog"){
+                    echo "show";
+                  }
+                ?> list-unstyled ml-4" id="select-9" data-parent="#accordian">
+                    <li><a href="{{url('blog')}}">Blog</a></li>
+                  </ul>
+              </li>
+
+
+              <li class="p-1"><a href="#select-10" data-toggle="collapse"><i class="fa fa-users"></i>Our Clients</a>
+                  <ul class="collapse <?php 
+
+                  if(Request::path() == "add_clients" || Request::path() == "clients_list"){
                     echo "show";
                   }
 
-                ?> list-unstyled ml-4" id="select-5" data-parent="#accordian">
-                    <li><a href="{{url('/bannersection')}}">Banner</a></li>
+                ?> list-unstyled ml-4" id="select-10" data-parent="#accordian">
+                    <li><a href="{{url('/add_clients')}}">Add clients</a></li>
+                    <li><a href="{{url('/clients_list')}}">Clients list</a></li>
                   </ul>
               </li>
+              
 
               <li class="p-1"><a href="#select-3" data-toggle="collapse"><i class="fa fa-podcast"></i>Navbar</a>
                   <ul class="collapse <?php 
@@ -87,16 +140,7 @@
                   </ul>
               </li>
 
-              <li class="p-1"><a href="#select-6" data-toggle="collapse"><i class="fa fa-user"></i>Our team</a>
-                  <ul class="collapse <?php 
-                  if(Request::path() == "add_team" || Request::path() == "teams"){
-                    echo "show";
-                  }
-                ?> list-unstyled ml-4" id="select-6" data-parent="#accordian">
-                    <li><a href="{{url('add_team')}}">Add team</a></li>
-                    <li><a href="{{url('teams')}}">Team list</a></li>
-                  </ul>
-              </li>
+             
               <li class="p-1"><a href="#select-10" data-toggle="collapse"><i class="fa fa-users"></i>Our Clients</a>
                   <ul class="collapse <?php 
 
