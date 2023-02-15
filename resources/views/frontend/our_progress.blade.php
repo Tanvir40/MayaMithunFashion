@@ -14,66 +14,73 @@
             <br>
             <p class="text-center">100% Export Oriented Maya Mithu Fashion Ltd Garments Manufacture & Exporter Company Of Bangladesh.</p>
 
-            <section id="about" class="about">
 
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
+            @foreach($blog as $key => $data)
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h2>@if(isset($bannersection->name)){{$bannersection->name}}@endif</h2>
-              <p>
-                @if(isset($bannersection->description)){{$bannersection->description}}@endif
-              </p>
-            </div>
-          </div>
+              @if($key%2 == 0)
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                <section id="about" class="about">
 
-            @if(isset($bannersection->description))
+                  <div class="container" data-aos="fade-up">
+                    <div class="row gx-0">
 
-            <img src="{{asset($bannersection->image)}}" class="img-fluid" alt="">
+                      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                          <h2>@if(isset($data->name)){{$data->name}}@endif</h2>
+                          <p>
+                            @if(isset($data->description)){{$data->description}}@endif
+                          </p>
+                        </div>
+                      </div>
 
-            @endif
+                      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+
+                        @if(isset($data->image))
+
+                        <img src="{{asset($data->image)}}" class="img-fluid" alt="">
+
+                        @endif
 
 
-            
-          </div>
+                        
+                      </div>
 
-        </div>
-      </div>
+                    </div>
+                  </div>
 
-    </section>
+                </section>
+              @else
+                <!-- ======= About Section 2 ======= -->
+                <section id="about" class="about">
 
-    <!-- ======= About Section 2 ======= -->
-    <section id="about" class="about">
+                  <div class="container" data-aos="fade-up">
+                    <div class="row gx-0">
 
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
 
-        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                        @if(isset($data->description))
 
-            @if(isset($bannersection->description))
+                        <img src="{{asset($data->image)}}" class="img-fluid" alt="">
 
-            <img src="{{asset($bannersection->image)}}" class="img-fluid" alt="">
+                        @endif
 
-            @endif
+                      </div>
+                      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                          <h2>@if(isset($data->name)){{$data->name}}@endif</h2>
+                          <p>
+                            @if(isset($data->description)){{$data->description}}@endif
+                          </p>
+                        </div>
+                      </div>
 
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h2>@if(isset($bannersection->name)){{$bannersection->name}}@endif</h2>
-              <p>
-                @if(isset($bannersection->description)){{$bannersection->description}}@endif
-              </p>
-            </div>
-          </div>
+                    </div>
+                  </div>
 
-        </div>
-      </div>
-
-    </section>
-    <!-- End About 2 Section -->
+                </section>
+                <!-- End About 2 Section -->
+              @endif
+            @endforeach
 
     </div>
 

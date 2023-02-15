@@ -23,7 +23,7 @@
               <li class="p-1"><a href="#select-18" data-toggle="collapse"><i class="fa fa-th-large"></i>Product</a>
                   <ul class="collapse <?php 
 
-                  if(Request::path() == "sliderlist"){
+                  if(Request::path() == "cfhncf"){
                     echo "show";
                   }
 
@@ -49,24 +49,27 @@
               <li class="p-1"><a href="#select-8" data-toggle="collapse"><i class="fa fa-meetup"></i>About Us</a>
                   <ul class="collapse <?php 
 
-                  if(Request::path() == "introduction" || Request::path() == "managingdirector" || Request::path() == "review"){
+                  if(Request::path() == "introduction" || Request::path() == "managingdirector" || Request::path() == "review" || Request::path() == "add_team" || Request::path() == "teams"){
                     echo "show";
                   }
                 ?> list-unstyled ml-4" id="select-8" data-parent="#accordian">
                     <li><a href="{{url('introduction')}}">Introduction</a></li>
                     <li><a href="{{url('managingdirector')}}">Managing Director</a></li>
-                    <li><a href="{{url('review')}}">Review</a></li>
+                    <li><a href="{{url('review')}}"></a></li>
+                    <li><a href="{{url('add_team')}}">Add Review</a></li>
+                    <li><a href="{{url('teams')}}">Review List</a></li>
                   </ul>
               </li>
 
               <li class="p-1"><a href="#select-9" data-toggle="collapse"><i class="fa fa-meetup"></i>OUR PROGRESS</a>
                   <ul class="collapse <?php 
 
-                  if(Request::path() == "blog"){
+                  if(Request::path() == "blog" || Request::path() == "blog_list"){
                     echo "show";
                   }
                 ?> list-unstyled ml-4" id="select-9" data-parent="#accordian">
                     <li><a href="{{url('blog')}}">Blog</a></li>
+                    <li><a href="{{url('blog_list')}}">Blog List</a></li>
                   </ul>
               </li>
 
@@ -117,7 +120,19 @@
                   </ul>
               </li>
 
+           
+              <li class="p-1"><a href="#select-10" data-toggle="collapse"><i class="fa fa-users"></i>Our Clients</a>
+                  <ul class="collapse <?php 
 
+                  if(Request::path() == "add_clients" || Request::path() == "clients_list"){
+                    echo "show";
+                  }
+
+                ?> list-unstyled ml-4" id="select-10" data-parent="#accordian">
+                    <li><a href="{{url('/add_clients')}}">Add clients</a></li>
+                    <li><a href="{{url('/clients_list')}}">Clients list</a></li>
+                  </ul>
+              </li>
 
               <li class="p-1"><a href="{{url('/websetup')}}"><i class="fa fa-tachometer"></i>Web setup</a>
               </li>

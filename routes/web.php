@@ -131,8 +131,10 @@ Route::group(["middleware"=>"auth"], function(){
     Route::get('/review', [mainController::class,"review"]);
     Route::post('/review/post', [mainController::class,"review_post"])->name("review_post");
 
-    Route::get('/blog', [mainController::class,"blog"]);
-    Route::post('/blog/post', [mainController::class,"blog_post"])->name("blog_post");
+    Route::get('/blog', [ourbrandsController::class,"blog"]);
+    Route::get('/blog_list', [ourbrandsController::class,"blog_list"]);
+    Route::get('/blog_delete/{id}', [ourbrandsController::class,"blog_delete"]);
+    Route::post('/blog_post', [ourbrandsController::class,"blog_post"])->name("blog_post");
 
 });
 

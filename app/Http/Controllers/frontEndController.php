@@ -16,6 +16,8 @@ use App\Models\bannersection;
 use App\Models\bannersectionsec;
 use App\Models\bannersectionimage;
 use App\Models\our_service;
+use App\Models\introduction;
+use App\Models\blog;
 
 class frontEndController extends Controller
 {
@@ -68,6 +70,8 @@ class frontEndController extends Controller
          $our_service = our_service::orderBy('id', 'desc')->get();
       }
 
+     
+
       $teams         = Team::get();
       $contact       = ContactInfo::get();
       $OurClient     = OurClient::get();
@@ -75,7 +79,7 @@ class frontEndController extends Controller
       $brands_count  = ourbrands::count();
       $teams_count   = Team::count();
 
-      return view('frontend.index', compact("aboutus","slider","ourbrands","websetup", "narbar","teams","contact","OurClient","clint_count","brands_count","teams_count","bannersection","bannersectionsec","bannersectionimage","our_service"));
+      return view('frontend.index', compact("aboutus","slider","ourbrands","websetup", "narbar","teams","contact","OurClient","clint_count","brands_count","teams_count","bannersection","bannersectionsec","bannersectionimage","our_service" ));
 
       
     }
@@ -136,8 +140,13 @@ class frontEndController extends Controller
          $slider = slider::get();
       }
 
+      $blog = null;
+      if (blog::count() > 0) {
+         $blog = blog::get();
+      }
+
       $contact       = ContactInfo::get();
-   return view('frontend.our_progress' , compact("websetup", "narbar","contact" ,"bannersection" ,"slider"));
+   return view('frontend.our_progress' , compact("websetup", "narbar","contact" ,"bannersection" ,"slider","blog"));
   }
 
 
@@ -162,11 +171,21 @@ class frontEndController extends Controller
          $slider = slider::get();
       }
 
+      $introduction = null;
+        if (introduction::where("id", 1)->exists()) {
+           $introduction = introduction::find(1);
+        }
+
+        $teams = null;
+        if (Team::count() > 0) {
+           $teams = Team::orderBy('id', 'desc')->get();
+        }
+
       $contact       = ContactInfo::get();
       $OurClient     = OurClient::get();
       $clint_count   = OurClient::count();
       $brands_count  = ourbrands::count();
       $teams_count   = Team::count();
-   return view('frontend.about' , compact("websetup", "narbar","contact" ,"bannersection", "clint_count" ,"brands_count" , "teams_count" ,"slider"));
+   return view('frontend.about' , compact("websetup", "narbar","contact" ,"bannersection", "clint_count" ,"brands_count" , "teams_count" ,"slider","introduction","teams"));
   }
 }

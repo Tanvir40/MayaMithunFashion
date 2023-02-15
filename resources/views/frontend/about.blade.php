@@ -149,7 +149,7 @@
 <section>
         <div class="Introduction" width="100%">
             <h1 class=" text-center poopins"><b>Introduction</b></h1>
-            <p class="container-xl">2020, Maya Mithu Fashion Ltd started its voyage in limited extent at Jamgora, Ashulia, Dhaka. The company is dedicated to excellence in merchandising, product development, production. We have earned a reputation throughout the global apparel industry as one of the foremost factories in Bangladesh for our commitment to quality, timely delivery, and total value. Through our extensive sourcing network, we have the ability to effectively procure the best materials. Our customers rely on us to deliver the best quality products and superb service which enable them to successfully compete in the emerging marketplace.</p>
+            <p class="container-xl">@if(isset($introduction->text_one)){{$introduction->text_one}}@endif</p>
         </div>
 
         <div class="cha text-center">
@@ -228,8 +228,9 @@
   <div class="container-lg">
 
         <div class="row">
-
+                
                         <div class="col-md-6">
+                          
                             <div class="big-img">
                                         <div id="carouselExampleCaptions" class="big-imgs carousel slide" data-bs-ride="carousel">
                                           <div class="carousel-indicators">
@@ -238,36 +239,30 @@
                                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                           </div>
                                           <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                              <img src="{{asset('Image/2.jpeg')}}" class="d-block w-100 radius" alt="...">
+
+                                        @foreach($teams as $key => $team)
+
+
+                                            <div class="carousel-item @if($key == 0) active @endif">
+                                              <img src="{{asset('backend/img/team')}}/{{$team->image}}" class="d-block w-100 radius" alt="...">
                                               <div class="carousel-caption d-none d-md-block">
                                                 </div>
 
                                                 <div class="mt-4 text-center star">
+                                                @for($i=1; $i <= $team->name; $i++)
                                                   <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                                @endfor
                                                 </div>
+                                               
 
-                                                <p class="mt-3">Maya Mithu Fashion Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
+                                                <p class="mt-3">{{$team->desp}}</p>
                                                 
 
                                             </div>
-                                            <div class="carousel-item">
-                                              <img src="{{asset('Image/1.jpeg')}}" class="d-block w-100 radius" alt="...">
-                                              <div class="carousel-caption d-none d-md-block">
-                                                </div>
-                                                <div class="mt-4 text-center star">
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                                </div>
-                                                <p class="mt-3">Maya Mithu Fashion Ltd is very helpful, calculative & Quality concious. We got any message or solution at a glance. Their dept of knowledge of garments is significance. So we recommend them as our prime supplier</p>
-                                            </div>
+                                        
+                                        @endforeach
+                                            
+
                                             
                                           </div>
                                         
@@ -289,7 +284,7 @@
                                             <div class="bg">
                                               <div class="content">
                                                   <h2 class="poopins">Certified Products</h2>
-                                                  <p> 100% Export Oriented Maya Mithu Fashion Ltd Garments Manufacture & Exporter Company Of Bangladesh.</p>
+                                                  <p>@if(isset($introduction->text_two)){{$introduction->text_two}}@endif</p>
                                               </div>
                                             </div>
                                         
@@ -337,6 +332,8 @@
                                                     </div>
                                               </div>
                                 </div>
+
+                                
 
         </div> 
   </div>

@@ -18,7 +18,6 @@ class TeamController extends Controller
 
         $request->validate([
             'name'=>'required',
-            'position'=>'required',
             'desp'=>'required',
             'image'=>'image | max:2048 | mimes:jpeg,png,jpg',
         ]);
@@ -31,11 +30,10 @@ class TeamController extends Controller
         Team::insert([
             'image'=>$file_name,
             'name'=>$request->name,
-            'position'=>$request->position,
             'desp'=>$request->desp,
             'created_at'=>Carbon::now(),
         ]);
-        return back()->with('success' , 'Team Member Added Successfully'); 
+        return back()->with('success' , 'Review Added Successfully'); 
     }
 
     //team list
@@ -54,7 +52,7 @@ class TeamController extends Controller
 
         Team::find($id)->delete();
 
-        return back()->with('delete', 'Team Deleted Successfully!');
+        return back()->with('delete', 'Review Deleted Successfully!');
     }
 
     //team edit page view
@@ -68,7 +66,6 @@ class TeamController extends Controller
     function update_team(Request $request){
         $request->validate([
             'name'=>'required',
-            'position'=>'required',
             'desp'=>'required',
         ]);
         if($request->image != ''){
@@ -86,22 +83,20 @@ class TeamController extends Controller
             Team::find($request->id)->update([
                 'image'=>$file_name,
                 'name'=>$request->name,
-                'position'=>$request->position,
                 'desp'=>$request->desp,
                 'updated_at'=>Carbon::now(),
             ]);
-            return redirect('/teams')->with('updated' , 'Team Member Updated Successfully');
+            return redirect('/teams')->with('updated' , 'Review Updated Successfully');
 
         }else{
                  Team::find($request->id)->update([
                 'name'=>$request->name,
-                'position'=>$request->position,
                 'desp'=>$request->desp,
                 'updated_at'=>Carbon::now(),
             ]);
         }
         
-        return redirect('/teams')->with('updated' , 'Team Member Updated Successfully');
+        return redirect('/teams')->with('updated' , 'Review Updated Successfully');
 
     }
 

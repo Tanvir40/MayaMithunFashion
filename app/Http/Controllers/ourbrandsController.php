@@ -8,6 +8,7 @@ use App\Models\bannersection;
 use App\Models\bannersectionsec;
 use App\Models\bannersectionimage;
 use App\Models\our_service;
+use App\Models\blog;
 use carbon\carbon;
 
 class ourbrandsController extends Controller
@@ -350,9 +351,48 @@ public function banner_section_update_image_three(Request $req){
 
 
 
+    public function blog(){
+        return view("backend.blog");
+    }
 
+    public function blog_post(Request $req){
 
+        if ($req->isMethod("post")) {
+            $req->validate([
+                //"tea_img" => "required|mimes:jpg,png|max:300",
+                "name" => "required",
+                "description" => "required",
+                "image" => "required|image",
+            ]);
 
+            $file   = $req->image;
+            $ext    = $file->getClientOriginalExtension();
+            $exfile = substr(md5(time()), 0, 10).".".$ext;
+
+            $ourbrands = new blog;
+            $ourbrands->name = $req->name;
+            $ourbrands->description = $req->description;
+            $ourbrands->image = "Image/brands/".$exfile;
+            $ourbrands->save();
+
+            $file->move("Image/brands/", $exfile);
+            return redirect("/blog")->with("success"," Uploaded successfully!");
+         }
+
+    }
+
+    public function blog_list(){
+        $blog = null;
+        if (blog::count() > 0) {
+            $blog = blog::get();
+        }
+        return view("backend.blog_list", compact("blog"));
+    }
+
+    public function blog_delete($id){
+        blog::find($id)->delete();
+        return redirect()->back();
+    }
 
 
 

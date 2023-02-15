@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\aboutus;
 use App\Models\slider;
 use App\Models\websetup;
+use App\Models\introduction;
+use App\Models\managingdirector;
 
 class mainController extends Controller
 {
@@ -178,9 +180,6 @@ class mainController extends Controller
                 $slider->save();
                 return redirect("/sliderlist");
             }
-
-           
-
          }
         
     }
@@ -219,9 +218,86 @@ class mainController extends Controller
 
     }
 
-    
+    public function introduction(){
+        $introduction = null;
+        if (introduction::where("id", 1)->exists()) {
+           $introduction = introduction::find(1);
+        }
+        return view("backend.introduction", compact("introduction"));
+    }
+
+    public function introduction_post(Request $req){
+         
+
+        if ($req->text_one) {
+
+           $req->validate([
+               //"tea_img" => "required|mimes:jpg,png|max:300",
+               "text_one" => "required",
+           ]);
+
+           $introduction = introduction::find($req->id);
+           $introduction->text_one = $req->text_one;
+           $introduction->save();
 
 
+           return redirect()->back()->with("sucess","Introduction updated successfully!");
+
+        }
+
+        if ($req->text_two) {
+
+            $req->validate([
+                //"tea_img" => "required|mimes:jpg,png|max:300",
+                "text_two" => "required",
+            ]);
+ 
+            $introduction = introduction::find($req->id);
+            $introduction->text_two = $req->text_two;
+            $introduction->save();
+ 
+            return redirect()->back()->with("sucess","Introduction updated successfully!");
+
+         }
+
+   }
+
+   public function managingdirector(){
+        $managingdirector = null;
+        if (managingdirector::where("id", 1)->exists()) {
+        $managingdirector = managingdirector::find(1);
+        }
+        return view("backend.managingdirector", compact("managingdirector"));
+    }
+
+    public function managingdirector_post(Request $req){
+         
+
+        if ($req->isMethod("post")) {
+
+           $req->validate([
+               //"tea_img" => "required|mimes:jpg,png|max:300",
+               "name" => "required",
+               "image" => "required|image"
+           ]);
+
+           $file   = $req->image;
+           $ext    = $file->getClientOriginalExtension();
+           $exfile = substr(md5(time()), 0, 10).".".$ext;
+
+           $managingdirector =  managingdirector::find('1');
+           $managingdirector->image = "Image/managingdirector/".$exfile;
+           $managingdirector->name = $req->name;
+           $managingdirector->save();
+           
+           $file->move("Image/managingdirector/", $exfile);
+
+           return redirect()->back()->with("success","Managing Director updated successfully!");
+
+        }
+
+
+   }
 
 
 }

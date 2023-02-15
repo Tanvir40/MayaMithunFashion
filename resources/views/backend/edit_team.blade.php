@@ -9,7 +9,7 @@
       <div class="card my-2">
       <div class="card-body">
           <div style="overflow: hidden;">
-            <h3 class="float-left">Add new Team Member</h3>
+            <h3 class="float-left">Edit Review</h3>
           </div>
           <hr>
 
@@ -32,20 +32,14 @@
                 </div>
 
                 <div class="mb-3 mb-2">
-                  <label for="name" class="form-label">Member Name</label>
+                  <label for="name" class="form-label">Star</label>
                   <input type="text" class="form-control"  name="name" value="{{$teams->name}}">
                     @error('name')
                         <strong class="text-danger">{{$message}}</strong>
                     @enderror
                 </div>
 
-                <div class="mb-3 mb-2">
-                  <label for="name" class="form-label">Member Position</label>
-                  <input type="text" class="form-control"  name="position" value="{{$teams->position}}">
-                    @error('position')
-                        <strong class="text-danger">{{$message}}</strong>
-                    @enderror
-                </div>
+               
 
                 <div class="mb-3 mb-2">
                   <label for="name" class="form-label">Description</label>
@@ -55,7 +49,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-primary">Add Member</button>
+                <button type="submit" class="btn btn-primary">Update Review</button>
 
               </form>
 
