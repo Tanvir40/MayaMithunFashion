@@ -8,6 +8,7 @@ use App\Http\Controllers\ourbrandsController;
 use App\Http\Controllers\pageController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,6 +53,14 @@ Route::group(["middleware"=>"auth"], function(){
     Route::get('/teams/delete/{id}', [TeamController::class,'teams_delete'])->name('teams.delete');
     Route::get('/edit/team/{id}', [TeamController::class,'edit_team'])->name('edit.teams');
     Route::POST('/update/team/', [TeamController::class,'update_team']);
+
+     //product controller
+     Route::get('/add_product', [ProductController::class,'add_product'])->name('add.product');
+     Route::POST('/insert_product/', [ProductController::class,'insert_product'])->name('insert.product');
+     Route::get('/product', [ProductController::class,'product'])->name('product');
+     Route::get('/product/delete/{id}', [ProductController::class,'product_delete'])->name('products.delete');
+     Route::get('/product/edit/{id}', [ProductController::class,'edit_product'])->name('edit.products');
+     Route::POST('/update/product/', [ProductController::class,'update_product']);
 
     //contact us controller
     Route::get('/view_contact/', [ContactController::class,'view_contact'])->name('view.contact');
@@ -136,6 +145,12 @@ Route::group(["middleware"=>"auth"], function(){
     Route::get('/blog_delete/{id}', [ourbrandsController::class,"blog_delete"]);
     Route::post('/blog_post', [ourbrandsController::class,"blog_post"])->name("blog_post");
 
+    Route::get('/add_product', [ProductController::class,"add_product"]);
+    Route::POST('/insert_product', [ProductController::class,"insert_product"]);
+    Route::get('/list_product', [ProductController::class,"list_product"]);
+    Route::get('/edit_product/{$id}', [ProductController::class,"edit_product"]);
+    Route::POST('/update_product', [ProductController::class,"update_product"]);
+    Route::get('/delete_product', [ProductController::class,"delete_product"]);
 });
 
 /*For frontEndController controller */
@@ -144,8 +159,9 @@ Route::group(["middleware"=>"auth"], function(){
 /*For front dynamic page....*/
     Route::get('dynamic/{page}',[pageController::class,"front_page"]);
     /*For front product details page....*/
-    Route::get('product',[frontEndController::class,"product_details"])->name('product.details');
+    Route::get('/product/details/{$id}',[frontEndController::class,"product_details"])->name('product.details');
     Route::get('contact',[frontEndController::class,"contact"])->name('contact');
     Route::get('our-progress',[frontEndController::class,"our_progress"])->name('our_progress');
     Route::get('about',[frontEndController::class,"about"])->name('about');
+    Route::get('/shop/{$id}', [ourbrandsController::class,"shop"]);
 

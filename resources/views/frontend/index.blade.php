@@ -94,165 +94,17 @@
 
                 <div class="product m-0 p-0">
 
+                @forelse($products as $product)
                 <div class="card border-0 mb-4 p-0">
                     <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
+                      <a href="{{route('product.details' , $product->id)}}">
+                        <img class="card-product" src="{{asset('backend/img/product')}}/{{$product->image}}" alt="">
                       </a>
                     </div>
                   </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="card border-0 mb-4 p-0">
-                    <div class="card-body">
-                      <a href="{{route('product.details')}}">
-                        <img class="card-product" src="{{asset('Image/Untitled-design-2022-03-05T190713.817.png')}}" alt="">
-                      </a>
-                    </div>
-                  </div>
+                  @empty
+                 
+                  @endforelse
 
 
                   </div>

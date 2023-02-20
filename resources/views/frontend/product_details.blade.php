@@ -3,22 +3,20 @@
   <section class="section my-5 py-5">
       <div class="container">
         <div class="row">
-          
+         
           <div class="col-md-6 col-12 text-center">
             <img src="{{asset('Image/Untitled-design-2022-03-05T171515.074.png')}}" class="img-fluid" width="70%">
           </div>
 
           <div class="col-md-6 col-12">
-            <h4>Men’s</h4>
-            <p>100% Cotton Frence Terry Sweat Shirt 220 Gsm</p>
+            <h4>{{$products->product_name}}</h4>
+            <p>{{$products->product_short_title}}</p>
             <span class="posted_in">Categories: <a href="" rel="tag">Knitwear Item</a>, <a href="" rel="tag">Men</a></span>
           </div>
 
           <div class="col-12">
               <h6 class="mb-4" style="font-weight: bold;border-top: 3px solid #50bb26;padding-top: 3px;display: inline-block;">Description</h6>
-              <p>100% Cotton F.Terry Sweat Shirt with Neck, Cuff, Bottom Rib.</p>
-              <p>Weight 220 gsm.</p>
-              <p>Body Length 70 Cm, Sleeve Length 54, Chest 51 Cm</p>
+              <p>{{$products->long_desp}}</p>
               <h4 style="font-weight: bold;">Related products</h4>
               
               <div class="row">

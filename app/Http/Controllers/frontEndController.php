@@ -18,6 +18,7 @@ use App\Models\bannersectionimage;
 use App\Models\our_service;
 use App\Models\introduction;
 use App\Models\blog;
+use App\Models\product;
 
 class frontEndController extends Controller
 {
@@ -69,6 +70,8 @@ class frontEndController extends Controller
       if (our_service::count() > 0) {
          $our_service = our_service::orderBy('id', 'desc')->get();
       }
+  
+      $products = product::orderBy('id', 'desc')->get();
 
      
 
@@ -79,26 +82,34 @@ class frontEndController extends Controller
       $brands_count  = ourbrands::count();
       $teams_count   = Team::count();
 
-      return view('frontend.index', compact("aboutus","slider","ourbrands","websetup", "narbar","teams","contact","OurClient","clint_count","brands_count","teams_count","bannersection","bannersectionsec","bannersectionimage","our_service" ));
+      return view('frontend.index', compact("aboutus","slider","ourbrands","websetup", "narbar","teams","contact","OurClient","clint_count","brands_count","teams_count","bannersection","bannersectionsec","bannersectionimage","our_service" ,"products"));
 
       
     }
 
-    function product_details(){
+   public function product_details($id){
 
-      $websetup = null;
-      if (websetup::count() > 0) {
-         $websetup = websetup::find(1);
-      }
 
-      $narbar = null;
-      if (narbar::count() > 0) {
-         $narbar = narbar::get();
-      }
+      echo "hello";
+      // $products = product::find($id);
+      // return view('frontend.product_details',[
+      //     'products'=>$products,
+      // ]);
+      // $websetup = null;
+      // if (websetup::count() > 0) {
+      //    $websetup = websetup::find(1);
+      // }
 
-      $contact       = ContactInfo::get();
+      // $narbar = null;
+      // if (narbar::count() > 0) {
+      // $narbar        = narbar::get();
+      // }
+      // $products      = product::findorfail($id);
 
-      return view('frontend.product_details' , compact("websetup", "narbar","contact"));
+      // $contact       = ContactInfo::get();
+   
+
+      // return view('frontend.product_details' , compact("websetup", "narbar","contact" ,"products"));
   }
 
   function contact(){

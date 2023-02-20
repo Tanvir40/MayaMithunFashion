@@ -23,13 +23,13 @@
               <li class="p-1"><a href="#select-18" data-toggle="collapse"><i class="fa fa-th-large"></i>Product</a>
                   <ul class="collapse <?php 
 
-                  if(Request::path() == "cfhncf"){
+                  if(Request::path() == "add_product" || Request::path() == "product"){
                     echo "show";
                   }
 
                 ?> list-unstyled ml-4" id="select-18" data-parent="#accordian">
-                    <li><a href="">Add Product</a></li>
-                    <li><a href="">Product list</a></li>
+                    <li><a href="{{url('add_product')}}">Add Product</a></li>
+                    <li><a href="{{url('product')}}">Product list</a></li>
                   </ul>
               </li>
 
