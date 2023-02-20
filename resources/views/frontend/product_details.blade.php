@@ -5,7 +5,7 @@
         <div class="row">
          
           <div class="col-md-6 col-12 text-center">
-            <img src="{{asset('Image/Untitled-design-2022-03-05T171515.074.png')}}" class="img-fluid" width="70%">
+            <img src="{{asset('backend/img/product')}}/{{$products->image}}" class="img-fluid" width="70%">
           </div>
 
           <div class="col-md-6 col-12">
@@ -21,27 +21,19 @@
               
               <div class="row">
 
+              @forelse($rel_products as $rel_product)
+
                 <div class="col-md-4 col-12 text-center">
-                  <img src="https://nankarfashion.com/wp-content/uploads/2022/03/Untitled-design-82.png" class="img-fluid" width="60%">
-                  <h4 style="text-align: left;">Men</h4>
-                  <a style="text-align: left;" href="" class=""><h2 style="font-size: 18px;">Sweater</h2></a>
+                  <a href="{{route('product.details' , $rel_product->id)}}"><img src="{{asset('backend/img/product')}}/{{$rel_product->image}}" class="img-fluid" width="60%"></a>
+                  <h4 style="text-align: left;">{{$rel_product->product_name}}</h4>
+                  <a style="text-align: left;" href="{{route('product.details' , $rel_product->id)}}" class=""><h2 class="text-dark" style="font-size: 18px;">{{$rel_product->product_short_title}}</h2></a>
                   <p style="text-align: left;">Star</p>
                 </div>
 
+              @empty
 
-                <div class="col-md-4 col-12 text-center">
-                  <img src="https://nankarfashion.com/wp-content/uploads/2022/03/Untitled-design-82.png" class="img-fluid" width="60%">
-                  <h4 style="text-align: left;">Men</h4>
-                  <a style="text-align: left;" href="" class=""><h2 style="font-size: 18px;">Sweater</h2></a>
-                  <p style="text-align: left;">Star</p>
-                </div>
+              @endforelse
 
-                <div class="col-md-4 col-12 text-center">
-                  <img src="https://nankarfashion.com/wp-content/uploads/2022/03/Untitled-design-82.png" class="img-fluid" width="60%">
-                  <h4 style="text-align: left;">Men</h4>
-                  <a style="text-align: left;" href="" class=""><h2 style="font-size: 18px;">Sweater</h2></a>
-                  <p style="text-align: left;">Star</p>
-                </div>
 
               </div>
 
@@ -54,3 +46,4 @@
 
 
 @include('../frontend/inc/footer')
+

@@ -89,27 +89,27 @@ class frontEndController extends Controller
 
    public function product_details($id){
 
+      $slider = null;
+      if (slider::count() > 0) {
+         $slider = slider::get();
+      }
+ 
+      $websetup = null;
+      if (websetup::count() > 0) {
+         $websetup = websetup::find(1);
+      }
 
-      echo "hello";
-      // $products = product::find($id);
-      // return view('frontend.product_details',[
-      //     'products'=>$products,
-      // ]);
-      // $websetup = null;
-      // if (websetup::count() > 0) {
-      //    $websetup = websetup::find(1);
-      // }
+      $narbar = null;
+      if (narbar::count() > 0) {
+      $narbar        = narbar::get();
+      }
+      $products      = product::findorfail($id);
 
-      // $narbar = null;
-      // if (narbar::count() > 0) {
-      // $narbar        = narbar::get();
-      // }
-      // $products      = product::findorfail($id);
+      $contact       = ContactInfo::get();
 
-      // $contact       = ContactInfo::get();
-   
+      $rel_products  = product::where('id', '!=', $id)->latest()->take(4)->get();
 
-      // return view('frontend.product_details' , compact("websetup", "narbar","contact" ,"products"));
+      return view('frontend.product_details' , compact("websetup", "narbar","contact" ,"products", "rel_products","slider"));
   }
 
   function contact(){

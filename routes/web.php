@@ -21,6 +21,7 @@ use App\Http\Controllers\ProductController;
 |
 */
 
+
 Route::get('/login', [loginController::class,"user_login"])->name("login");
 Route::post('/loging', [loginController::class,"user_loging"])->name("loging.user_loging");
 
@@ -148,7 +149,7 @@ Route::group(["middleware"=>"auth"], function(){
     Route::get('/add_product', [ProductController::class,"add_product"]);
     Route::POST('/insert_product', [ProductController::class,"insert_product"]);
     Route::get('/list_product', [ProductController::class,"list_product"]);
-    Route::get('/edit_product/{$id}', [ProductController::class,"edit_product"]);
+    Route::get('/edit_product/{id}', [ProductController::class,"edit_product"]);
     Route::POST('/update_product', [ProductController::class,"update_product"]);
     Route::get('/delete_product', [ProductController::class,"delete_product"]);
 });
@@ -159,9 +160,9 @@ Route::group(["middleware"=>"auth"], function(){
 /*For front dynamic page....*/
     Route::get('dynamic/{page}',[pageController::class,"front_page"]);
     /*For front product details page....*/
-    Route::get('/product/details/{$id}',[frontEndController::class,"product_details"])->name('product.details');
+    Route::get('/product/details/{id?}',[frontEndController::class,"product_details"])->name('product.details');
     Route::get('contact',[frontEndController::class,"contact"])->name('contact');
     Route::get('our-progress',[frontEndController::class,"our_progress"])->name('our_progress');
     Route::get('about',[frontEndController::class,"about"])->name('about');
-    Route::get('/shop/{$id}', [ourbrandsController::class,"shop"]);
+    Route::get('/shop/{id}', [ourbrandsController::class,"shop"]);
 
